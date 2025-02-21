@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat Alternates", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+    background-color: rgb(235, 235, 235);
+}
+.authorization{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    flex-direction: column;
+    height: 930px;
+}
+
+
+@media (max-width: 1400px) {
+    .authorization{
+    height: 900px;
+    }
+    /*Эти стили будут использованы для планшетов и ноутбуков с низким разрешением
+    */
+   
+  }
+
+  @media (max-width: 990px) {
+    .authorization{
+        height: 600px;
+        }
+    /*
+    Стили для устройств, у которых ширина viewport меньше или равно 990 пикселей,
+    но больше 770 пикселей.
+    Эти стили подойдут для некоторых мобильных устройств и планшетов
+    */
+  }
+
+  @media (max-width: 770px) {
+    .authorization{
+        height: 600px;
+        }
+    /*
+    Стили для устройств, у которых ширина viewport меньше или равно 770 пикселей.
+    Это множество мобильных устройств
+    */
+  }
+
+  .nick, .email, .password, .password_return, .continue{
+    margin-top: 3%;
+  }
+
+  .nick>.search{
+    margin-left: 80px;
+    padding: 5px;
+  }
+  .email>.search{
+    margin-left: 112px;
+    padding: 5px;
+  }
+  .password>.search{
+    margin-left: 82px;
+    padding: 5px;
+  }
+  .password_return>.search{
+    margin-left: 28px;
+    padding: 5px;
+  }
+  .continue{
+    margin-left: 65px;
+    border: 0.1px solid black;
+    padding: 10px;
+    background-color: white;
+    font-size: 20px;
+  }
+  .continue:hover{
+    background-color: rgb(204, 204, 204);
+  }
+  .authorization>form{
+    margin-top: 2%;
+  }
+
+
+  .password{
+    position: relative;
+  }
+  .icon-pass{
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
